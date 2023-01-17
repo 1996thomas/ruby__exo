@@ -2,10 +2,10 @@ p "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ? ( entre
 a = gets.chomp.to_i
 p"Voici la pyramide"
     a.times do |i|
-        (a-i).times{print" "}
+        (a-i-1).times{print" "}
         (i+1).times{print"#"}
             i-1.times do |n|
-                (i-=n).times{print"#"}
+                (i-n).times{print"#"}
             end
         puts
     end
